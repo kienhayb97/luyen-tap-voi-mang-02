@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let mang=prompt("nhap chuoi ");
+    let mangmoi=[]
+    let result=""
+   for (i=0;i<mang.length;i++){
+       mangmoi.push(mang.charAt(i))
+   }
+   for (i=0;i<mang.length;i++){
+       if (mangmoi[i]=="-"){
+           mangmoi[i]="_";
+       }
+       result=result+mangmoi[i]
+   }
+   document.write(result)
+</script>
+</body>
+</html>

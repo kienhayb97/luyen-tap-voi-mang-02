@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let x = 0;
+    let count=0;
+    do {
+        mang[x] = prompt("nhap mang")
+    } while (mang[x++] != "");
+    for (i = 0; i < mang.length; i++) {
+        if (isNaN(mang[i])){
+            count++
+        }
+    }
+     alert(count)
+</script>
+</body>
+</html>
